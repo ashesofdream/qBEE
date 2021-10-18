@@ -23,11 +23,11 @@ ifeq ($(ARCH),aarch64)
 endif
 
 ifeq ($(ARCH),mipsel)
-	PKG_ARCH:=mipsel
+	PKG_ARCH_qBEE:=mipsel
 endif
 
 ifeq ($(ARCH),mips)
-	PKG_ARCH:=mips
+	PKG_ARCH_qBEE:=mips
 endif
 
 PKG_SOURCE:=qBittorrent-nox_$(PKG_ARCH_qBEE)-linux-musl_static.zip
