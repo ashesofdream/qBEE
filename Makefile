@@ -22,6 +22,14 @@ ifeq ($(ARCH),aarch64)
 	PKG_ARCH_qBEE:=aarch64
 endif
 
+ifeq ($(ARCH),mipsel)
+	PKG_ARCH:=mipsel
+endif
+
+ifeq ($(ARCH),mips)
+	PKG_ARCH:=mips
+endif
+
 PKG_SOURCE:=qBittorrent-nox_$(PKG_ARCH_qBEE)-linux-musl_static.zip
 PKG_SOURCE_URL:=https://github.com/c0re100/qBittorrent-Enhanced-Edition/releases/download/release-$(PKG_VERSION)/
 UNTAR_DIR:=$(BUILD_DIR)/$(PKG_NAME)
